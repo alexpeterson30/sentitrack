@@ -26,3 +26,11 @@ plt.hist(length_train, bins=20, label="train_tweets")
 plt.hist(length_test, bins=20, label="test_tweets")
 plt.legend()
 plt.show()
+
+length_train = train['tweet'].str.len()
+length_test = test['tweet'].str.len()
+
+plt.hist(length_train, bins=20, label="train_tweets")
+plt.hist(length_test, bins=20, label="test_tweets")
+plt.legend()
+plt.show()
